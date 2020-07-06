@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class project(models.Model):
-    title = models.CharField(max_length=150,blank=False)
+    title = models.CharField(max_length=150,blank=False,help_text="please enter title of project")
     content = models.TextField(blank=False)
     developers = models.CharField(max_length=30,blank=False)
     start_date = models.DateField(blank=False)

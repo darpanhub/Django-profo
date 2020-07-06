@@ -1,0 +1,13 @@
+#header{
+    background-color:#7e670d;
+}
+#branding h1{
+    color: rgb(248, 247, 247);
+}
+input[type=submit]{
+    background-color: greenyellow;
+    color: black;
+}
+.module caption{
+    background-color: rgb(11, 204, 162);
+}
