@@ -27,8 +27,8 @@ def contactme(request):
 
         send_mail(
         'Hey darpan you got a new query from: '+name,
-        'the message is: '+ message,
-        'ddev010107@gmail.com' + email,
+        'the message is '+ message,
+        'darpansingh5969@gmail.com' + email,
         ['ddev010107@gmail.com'],
         fail_silently=False,
         )
