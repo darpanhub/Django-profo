@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'projects',
     'home',
+    'aboutMe',
 ]
 
 MIDDLEWARE = [
@@ -124,4 +125,13 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
 MEDIA_URL='/img/'
+MEDIA_ROOT = os.path.join(BASE_DIR,'static/img')
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER='darpandev010107@gmail.com'
+EMAIL_HOST_PASSWORD='developer01d'
+EMAIL_USE_TLS=True
 
