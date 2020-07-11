@@ -16,7 +16,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 
   <script src="https://kit.fontawesome.com/644b4096ee.js" crossorigin="anonymous"></script>
+
   <title>Web</title>
+
 </head>
 
 <body data-spy="scroll" data-target="#navbarResponsive">
@@ -63,28 +65,36 @@
     </div>
 
     <div class="caption text-center text-white">
+
       <h1 class="pb-1">Darpan Singh</h1>
       <h3 class="pb-1">Welcome To my Blog </h3>
+
     </div>
     <!-- end landing page -->
+
+    <section class="banner d-flex justify-content-center">
+      <a href="#aboutMe" class="btn_down"><i class="fas fa-chevron-down "></i></a>
+    </section>
 
 
   </div>
 
-  <section class="banner d-flex justify-content-center">
-    <a href="#aboutMe" class="btn_down"><i class="fas fa-chevron-down "></i></a>
-  </section>
+  
   <!-- end home secction -->
 
 
   <section id="aboutMe" class="offset">
+
     <div class="black-bg pb-3">
       <div class="container">
+        <!-- heading  -->
         <h1 class="text-center text-white pt-5 abm">ABOUT ME</h1>
         <div class="heading-underline mb-4 w-10"></div>
+        <!-- end heading -->
         <div class="row mb-5">
           <div class="col-lg-6 col-md-6 col-12 ">
-            <img class="rounded-circle mx-auto d-block shadow-lg p-2 mb-5 bg-white rounded img-fluid"
+            
+            <img class="rounded-circle mx-auto d-block shadow-lg p-2 bg-white rounded img-fluid"
               src="{% static 'img/aboutme-profile.jpg' %}" class="rounded-circle" height="auto" width="60%">
             <div class="heading-underline2 mb-4 w-10"></div>
             <h4 class="title text-white text-center">DARPAN SINGH</h4>
@@ -98,8 +108,6 @@
           </div>
 
           <div class="col-lg-6 col-md-6 col-12 text-white ab-para">
-            <!-- <h1>Who am I <i class="fas fa-question"></i></h1>
-            <hr class="w-15 mr-5 pt-5 border-light"> -->
             <p class="text-justify text-center">
               HI, Iam <span class="text-warning"> Darpan Singh</span> a Graphic Designer & full-stack Web Developer.
               <br>I love learning new and better ways to create seamless
@@ -112,34 +120,37 @@
                 <button type="button" class="btn btn-outline-light readm" data-toggle="modal"
                   data-target=".bd-example-modal-lg0">Read More</button>
               </a>
+
               <a class="btn resume" href="#">
                 <button class="btn btn-outline-light">RESUME</button>
               </a>
+
             </div>
             {% comment %} <button type="button" class="btn btn-outline-light readm" data-toggle="modal"
               data-target=".bd-example-modal-lg0">Read more</button> {% endcomment %}
 
-            <div class="modal fade bd-example-modal-lg0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                  <div class="modal-header black-bg">
-                    <h5 class="modal-title" id="exampleModalCenterTitle">Need a project<i class="fas fa-question"></i>
-                    </h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
+            <div class="modal fade bd-example-modal-lg0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header black-bg">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Need a project<i class="fas fa-question"></i>
+                        </h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+
                   <div class="modal-body black-bg">
-                    <img class="card-img-top img-fluid mx-auto d-block mb-3" src="{% static 'img/profile-pic.jpeg' %}"
-                      alt="">
-                    <p class="text-center">I pivoted my life path as Web Developer,<span class="text-danger">2020</span>
+                      <img class="card-img-top img-fluid mx-auto d-block mb-3" src="{% static 'img/profile-pic.jpeg' %}" alt="">
+
+                      <p class="text-center">I pivoted my life path as Web Developer,<span class="text-danger">2020</span>
                       was a bumpy yet exciting year for me. I left my graphic designing in March, and entered the maze
                       of the coding world. Four months later, I finally work as a <span class="text-danger">Front-end
                         developer</span> I was a Younger graphic designer with no experience related to coding at all.
-                    <h4>Why I Wanted to Code <i class="fas fa-question"></i></h4>For me, graphic design serves the
-                    purpose of solving a problem with attractive visual forms supported by invisible systems or
-                    structures.</p>
+                      <h4>Why I Wanted to Code <i class="fas fa-question"></i></h4>For me, graphic design serves the
+                      purpose of solving a problem with attractive visual forms supported by invisible systems or
+                      structures.</p>
+                      
                   </div>
                   <div class="modal-footer">
                     <a data-toggle="tooltip" data-placement="bottom" title="Click to Message Lincolnstep"
@@ -149,6 +160,7 @@
                         style="font-size: 22px;"></i></a>
                     <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
                   </div>
+
                 </div>
               </div>
             </div>
@@ -166,17 +178,20 @@
     <div class="shadow bgimg2">
       <div class="bg-overlay">
         <div class="container-fluid">
+
           <div class="col-12">
-            <h3 class="heading mb-3 text-center text-white pt-5">PROJECT</h3>
+            <h3 class="heading title text-center text-white">PROJECT</h3>
             <div class="heading-underline mb-5 w-15"></div>
           </div>
 
 
           <div class="row text-center">
             {% for project in myProjects %}
+
             <div class="col-md-4 col-sm-6 col-12 mt-2 mb-5">
               <div class="card">
                 <img class="card-img-top img-fluid" height="400" src="{{project.project_img.url}}" alt="Card image cap">
+
                 <div class="card-body">
                   <h5 class="card-title">{{project.title}}</h5>
                   <p class="card-text">{{project.content| truncatewords:10}}</p>
@@ -185,25 +200,24 @@
 
                   <button type="button" class="btn btn-primary" data-toggle="modal"
                     data-target=".bd-example-modal-lg-{{project.id}}">view more</button>
+                  </div>
 
-
-
-                </div>
               </div>
             </div>
 
 
 
-            <div class="modal fade bd-example-modal-lg-{{project.id}}" tabindex="-1" role="dialog"
-              aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal fade bd-example-modal-lg-{{project.id}}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content">
+
                   <div class="modal-header bg-info">
                     <h5 class="modal-title" id="exampleModalCenterTitle">{{project.title}}</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
+                  
                   <div class="modal-body text-dark">
                     <img class="card-img-top" src="{% static 'img/bg1.jpg' %}" alt="">
                     <p>{{project.content}}</p>
@@ -216,9 +230,11 @@
                     <p>project link:{{project.project_link}}</p>
                     <p>Developer:{{project.developers}}</p>
                   </div>
+
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                   </div>
+
                 </div>
               </div>
             </div>
@@ -232,67 +248,85 @@
   </section>
 
   <!-- project section ends  -->
-  <section id="Skills" class="offset" style="background-color:#000;">
-    <div class="bg-da skills pb-5">
+  <section id="Skills" class="offset">
+    <div class="skills pb-5">
       <div class="container">
+
         <div class="col-12">
-          <h3 class="heading text-white mb-3 text-center pt-5">SKILLS</h3>
+          <h3 class="heading text-white text-center">SKILLS</h3>
           <div class="heading-underline w-15"></div>
         </div>
 
-        <div class="row pt-5">
+        <div class="pt-5">
+          <div class="row">
           <div class="col-lg-6 text-secondary">
+
             <h2>HTML</h2>
             <div class="progress">
               <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
                 aria-valuemin="0" aria-valuemax="100" style="width: 99%"></div>
             </div>
+
+
             <h2>CSS3</h2>
             <div class="progress">
               <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar"
                 aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 99%"></div>
             </div>
 
+
             <h2>Bootstrap</h2>
             <div class="progress">
               <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
                 aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 95%"></div>
             </div>
+
+
             <h2>React</h2>
             <div class="progress">
               <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
                 aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
             </div>
+
           </div>
 
-          {% comment %} second col {% endcomment %}
+          <!-- second col  -->
           <div class="col-lg-6 text-secondary">
+
             <h2>JavaScript</h2>
             <div class="progress">
               <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
                 aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
             </div>
+
+
             <h2>Python</h2>
             <div class="progress">
               <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar"
                 aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
             </div>
 
+
             <h2>Django</h2>
             <div class="progress">
               <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
                 aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
             </div>
+            
 
-            {% comment %} end second {% endcomment %}
+
+            <!-- end second col  -->
           </div>
+        </div>
 
-          <div class="row pt-5 text-center text-white">
-            <div class='col-lg-3 col-md-6 col-sm-12'>
-              <i class="fas fa-cogs"></i>
-              <h1>DEVOP</h1>
-              <br>
-              <div class="pl-4">
+              <div class="row text-center text-white">
+                  <div class='col-lg-3 col-md-6 col-sm-12'>
+
+                  <i class="fas fa-cogs"></i>
+                   <h1>DEVOP</h1>
+                  <br>
+
+                  <div class="pl">
                 <ul class="row text-center">
                   <li class="rounded-circle m-2">JS</li>
                   <li class="rounded-circle m-2">CSS3</li>
@@ -302,41 +336,56 @@
                   <li class="rounded-circle m-2">Django</li>
                   <li class="rounded-circle m-2">React</li>
                 </ul>
-
               </div>
 
             </div>
             <!-- END FIRST COL -->
             <div class='col-lg-3 col-md-6 col-sm-12'>
+
               <i class="fas fa-tools"></i>
               <h1>TOOLS</h1>
+
               <div class="tools-wrapper">
                 <p>Git + Github</p>
                 <p>Command Line </p>
                 <p>Chrome DevTools</p>
               </div>
+
             </div>
+
             <!-- END SECOND COL -->
+
             <div class='col-lg-3 col-md-6 col-sm-12'>
+
               <i class="fas fa-palette"></i>
               <h1>DESIGN</h1>
+
               <img src="{% static 'img/photoshop.png' %}" alt="sketch" class="img-fluid">
               <img src="{% static 'img/coreldraw.png' %}" alt="" class="img-fluid">
               <img src="/static/img/illustrator.png" class="img-fluid ml-2">
               <img src="{% static 'img/white-inde.png' %}" alt="" class="img-fluid ml-2">
             </div>
+
             <!-- END THIRD COL -->
+
             <div class='col-lg-3 col-md-6 col-sm-12'>
+
               <i class="far fa-lightbulb"></i>
               <h1>OTHERS</h1>
               <p>ECMAScript 6</p>
               <p>CSS Detangling</p>
+
             </div>
-          </div>
+
+
+            </div>
+<!-- end devop design knowlede -->
+
         </div>
+        <!-- end full row skills -->
+        
       </div>
-
-
+    </div>
   </section>
 
   <!-- contact section  -->
@@ -347,11 +396,14 @@
         <div class="container">
           <form action="{% url 'contact' %}" method="POST">
             {% csrf_token %}
+
             <div class="col-12">
-              <h3 class="heading text-white mb-3 text-center pt-5">CONTACT US</h3>
+              <h3 class="heading text-white mb-3 text-center">CONTACT US</h3>
               <div class="heading-underline w-15"></div>
             </div>
+
             <div class="row pb-5">
+
               <div class="col-md-7">
                 <h1 class="text-left">Let's connect</h1>
                 <p class="text-left">Let's get together and do some dreaming. We'd love to
@@ -361,12 +413,15 @@
               <div class="col-md-5 mb-5">
 
                 <div class="row">
+                  
                   <div class="col-md-6">
                     <h3 class="text-left pt-4">MESSAGE </h3>
                   </div>
+
                   <div class="col-md-6">
                     <span class="glyphicon px-3 mt-4"><i class="fas fa-pencil-alt"></i></span>
                   </div>
+
                 </div>
                 <hr class="bg-light">
                 <!-- close  -->
@@ -386,12 +441,12 @@
                   </div>
                 </div>
 
-                {% comment %} <div class="row">
+                 <div class="row">
                   <label class="label col-md-3 control-label"><i class="fas fa-mobile-alt px-1"></i>Mobile</label>
                   <div class="col-md-9">
                     <input type="number" class="form-control" name="mobile number" placeholder="Mobile number">
                   </div>
-                </div> {% endcomment %}
+                </div>
 
                 <div class="row">
                   <label class="label col-md-3 control-label"><i class="far fa-comment-alt px-1"></i>Message</label>
@@ -399,8 +454,10 @@
                     <textarea name="message" class="form-control"></textarea>
                   </div>
                 </div>
-                <input type="submit" value="submit" class="btn btn-block btn-outline-danger">
+
+                <input type="submit" value="Submit" class="btn btn-outline-danger">
               </div>
+
 
             </div>
           </form>
@@ -419,11 +476,11 @@
 
 
   <footer id="sticky-footer" class="text-white-50">
-    <div class="container-fluid text-light bg-dark  text-center fixed-bottom p-2">
-      <small> Copyright &copy; 2020,All rights reserved | This template is made by Darpan Singh <i
-          class="fa fa-heart text-danger"></i>
 
-    </div>
+    <div class="container-fluid text-light bg-dark  text-center fixed-bottom p-2">
+      <small> Copyright &copy; 2020,All rights reserved | This template is made by Darpan Singh <i class="fa fa-heart text-danger"></i>
+        </div>
+
   </footer>
 
 
