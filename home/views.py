@@ -27,9 +27,9 @@ def contactme(request):
 
         send_mail(
         'Hey darpan you got a new query from: '+name,
-        'the message is '+ message,
-        'darpansingh5969@gmail.com',
-        ['darpansingh8686@gmail.com'],
+        'the message is: '+ message,
+        'Recived from:' + email,
+        ['ddev010107@gmail.com'],
         fail_silently=False,
         )
     return redirect('thankyou')
